@@ -5,16 +5,66 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Principal {
+
+
+public class Main {
 	public static void main(String args []) {
 		
-		System.out.println("show me the lights");
+		
+		
+		
+		
+		
 	}
 	
-	public enum Daniel{
+	public static void ArrayComLoops() {
+		//Exemplos de array muntimensional;
+		double[][] matrix = {{1.2, 4.3, 4.0}, 
+			      {4.1, -1.1}
+			};
 		
+		String[] arrayDeString = new String[2];
+		String[] arrayDeSTringOutraForma = {"Daniel", "DAyana", "MArcinha"};			
+		
+		int[] arrayDeInteiros = new int[2];
+		
+		arrayDeString[0] = "Daniel é burrinho hein kkkk";
+		arrayDeString[1] = "Mas isso não importa";
+		
+		
+		
+		arrayDeInteiros[0] = 1;
+		arrayDeInteiros[1] = 2;
+		
+		System.out.println("Array for");
+		for (int i = 0; i < arrayDeString.length; i++) {
+			
+			System.out.println(arrayDeString[i]);
+		}
+		
+		System.out.println("Array foreach");						
+		for (String nome : arrayDeString) {
+			
+			System.out.println(nome);
+		}
+		
+		
+		
+		int i = 0;
+		while(i < arrayDeString.length) {
+			System.out.println(arrayDeString[i]);
+			i++;
+		}
+		
+		int indice = 0;
+		do {
+			System.out.println(arrayDeString[i]);
+			indice++;
+		} while (indice < arrayDeString.length);
 		
 	}
+	
+	
 	
 	public static void ExibirTiposdeDados() {
 		
